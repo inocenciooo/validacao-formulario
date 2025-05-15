@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="/src/css/interactions.css">
 
     <title>Validação de Formulário</title>
 </head>
@@ -20,6 +22,7 @@
             <form action="">
                 <div class="form-content">
                     <input id="name" type="text" placeholder="Nome Completo *">
+                    <p>campo obrigatório</p>
                 </div>
                 <div class="form-content">
                     <input id="email" type="text" placeholder="Email *">
@@ -28,7 +31,7 @@
                     <input id="phone" type="text" placeholder="Telefone *">
                 </div>
                 <div class="form-content">
-                    <input id="message" type="text" placeholder="Mensagem *">
+                    <textarea name="" id="message" placeholder="Messagem *"></textarea>
                 </div>
                 <p>*campos obrigatórios</p>
                 <button>Enviar</button>

@@ -1,0 +1,21 @@
+@media (max-width: 850px) {
+  body {
+    margin: 20px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .hero section:first-child {
+    padding: 0;
+  }
+
+  .hero section:first-child h1,
+  .hero section:first-child p {
+    text-align: center;
+  }
+  .form {
+    height: 90vh;
+  }
+}

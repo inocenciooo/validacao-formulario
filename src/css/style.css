@@ -8,6 +8,7 @@
 
 button {
   all: unset;
+  cursor: pointer;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 96vh;
+  min-height: 96vh;
   width: auto;
   font-family: "Roboto", sans-serif;
 }
@@ -33,32 +34,66 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 120px;
+  padding: 0 5rem 0 4rem;
 }
 
 .hero section:first-child h1 {
   font-weight: 900;
-  font-size:  50px;
+  font-size: 50px;
 }
 
 .hero section:first-child p {
-  font-size:  20px;
+  font-size: 25px;
+  margin-top: 15px;
 }
-
 
 .form {
   background-color: white;
   padding: 30px;
+  font-size: 18px;
 }
-.form .form-content {
-  height: 35px;
-  border: 1px solid black;
-  margin: 10px 0;
+
+.form form {
+  height: 100%;
   display: flex;
+  flex-direction: column;
+}
+
+.form form > :last-child {
+  margin-top: auto;
+}
+
+.form .form-content input,
+.form .form-content textarea {
+  height: 50px;
+  border: 2px solid black;
+  display: block;
   padding: 10px;
   border-radius: 8px;
-}
-.form input {
   width: 100%;
-  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.form .form-content input::placeholder,
+.form .form-content textarea::placeholder {
+  font-weight: 700;
+}
+
+.form .form-content #message {
+  height: 200px;
+  resize: none;
+}
+
+.form button {
+  background-color: #3ccc87;
+  width: 100%;
+  text-align: center;
+  padding: 22px 0;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 22px;
 }
