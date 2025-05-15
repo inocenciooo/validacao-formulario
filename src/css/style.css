@@ -51,6 +51,7 @@ body {
   background-color: white;
   padding: 30px;
   font-size: 18px;
+  border-radius: 10px;
 }
 
 .form form {
@@ -63,6 +64,28 @@ body {
   margin-top: auto;
 }
 
+.form .form-content.erro input,
+.form .form-content.erro textarea {
+  border: 2px solid #f52e2e;
+}
+
+
+.form .form-content.ok input,
+.form .form-content.ok textarea {
+  border: 2px solid #00C22B;
+}
+
+
+.form .form-content p {
+  margin: 5px 0 15px 3px;
+  visibility: hidden;
+}
+
+.form .form-content.erro p {
+  color: #f52e2e;
+  visibility: visible;
+}
+
 .form .form-content input,
 .form .form-content textarea {
   height: 50px;
@@ -73,7 +96,6 @@ body {
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  margin-bottom: 30px;
   font-size: 18px;
 }
 

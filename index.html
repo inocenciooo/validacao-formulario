@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
-    <link rel="stylesheet" href="/src/css/interactions.css">
+    <link rel="shortcut icon" href="./src/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/responsive.css" />
 
     <title>Validação de Formulário</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main class="hero">
-        <section>
-            <h1>FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
-            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
-        </section>
-        <section class="form">
-            <form action="">
-                <div class="form-content">
-                    <input id="name" type="text" placeholder="Nome Completo *">
-                    <p>campo obrigatório</p>
-                </div>
-                <div class="form-content">
-                    <input id="email" type="text" placeholder="Email *">
-                </div>
-                <div class="form-content">
-                    <input id="phone" type="text" placeholder="Telefone *">
-                </div>
-                <div class="form-content">
-                    <textarea name="" id="message" placeholder="Messagem *"></textarea>
-                </div>
-                <p>*campos obrigatórios</p>
-                <button>Enviar</button>
-            </form>
-        </section>
+      <section>
+        <h1>FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
+        <p>
+          caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
+          entraremos em contato em menos de 24h.
+        </p>
+      </section>
+      <section class="form">
+        <form id="form">
+          <div class="form-content">
+            <input
+              class="form-item"
+              id="name"
+              type="text"
+              placeholder="Nome Completo *"
+            />
+            <p>campo obrigatório</p>
+          </div>
+          <div class="form-content">
+            <input
+              class="form-item"
+              id="email"
+              type="text"
+              placeholder="Email *"
+            />
+            <p>campo obrigatório</p>
+          </div>
+          <div class="form-content">
+            <input
+              class="form-item"
+              id="phone"
+              type="text"
+              placeholder="Telefone *"
+            />
+            <p>campo obrigatório</p>
+          </div>
+          <div class="form-content">
+            <textarea
+              class="form-item"
+              name=""
+              id="message"
+              placeholder="Messagem *"
+            ></textarea>
+            <p>campo obrigatório</p>
+          </div>
+          <p>*campos obrigatórios</p>
+          <button id="button">Enviar</button>
+        </form>
+      </section>
     </main>
-</body>
 
+    <script src="script.js"></script>
+  </body>
 </html>

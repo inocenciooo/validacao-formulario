@@ -10,6 +10,13 @@
   .hero section:first-child {
     padding: 0;
   }
+  .hero section:first-child h1 {
+    font-size: 30px;
+  }
+
+  .hero section:first-child p {
+    font-size: 18px;
+  }
 
   .hero section:first-child h1,
   .hero section:first-child p {
