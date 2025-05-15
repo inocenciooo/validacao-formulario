@@ -15,18 +15,19 @@ body {
   background-image: url(../images/background.png);
   background-repeat: repeat-x;
   background-size: contain;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 50px;
+  padding: 20px 50px;
 }
 
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 96vh;
   width: auto;
   font-family: "Roboto", sans-serif;
+  min-height: 90vh;
 }
 
 .hero section:first-child {

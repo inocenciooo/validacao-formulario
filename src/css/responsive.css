@@ -1,6 +1,6 @@
 @media (max-width: 850px) {
   body {
-    margin: 20px;
+    padding: 20px;
   }
   .hero {
     display: flex;
