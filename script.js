@@ -6,6 +6,7 @@ form.addEventListener("submit", (event) => {
   formItems.forEach(function (area) {
     if (area.value == "") {
       area.parentElement.classList.add("erro");
+      area.parentElement.classList.remove("ok");
     } else {
       area.parentElement.classList.add("ok");
       area.parentElement.classList.remove("erro");
@@ -16,5 +17,6 @@ form.addEventListener("submit", (event) => {
 formItems.forEach(function (area) {
   area.addEventListener("blur", () => {
     area.parentElement.classList.remove("erro");
+    area.parentElement.classList.remove("ok");
   });
 });
